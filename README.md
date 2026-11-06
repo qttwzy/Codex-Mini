@@ -92,7 +92,7 @@ QQ 群：**760669553**
 
 ## Windows 版本
 
-官方 Windows 安装包已经随最新 Release 一起发布，文件名是 `CodexMini_v4.5.2_Windows_Setup.exe`。Windows 版支持在 Windows 桌面环境中运行 Codex Mini 控制面板，并保留手机网页控制、线程列表、CDP 受控 Codex、局域网访问和 Pro 外网入口等核心能力。
+官方 Windows 安装包已经随最新 Release 一起发布，文件名是 `CodexMini_v4.5.2_Windows_Setup.exe`。Windows 版支持在 Windows 桌面环境中运行 Codex Mini 控制面板，并保留手机网页控制、线程列表、CDP 受控 Codex、局域网访问等核心能力（Pro 外网入口已随本地化移除）。
 
 ## Android 版本
 
@@ -135,9 +135,11 @@ Codex Mini 不是云端聊天服务，真正的 Codex 登录状态、线程切�
 2. 手机网页把文字或附件发送到这台电脑
 3. 本地服务通过 CDP 控制 Codex Desktop，把内容发送到当前线程
 4. 本地服务读取 Codex 会话状态和回复，并同步回手机网页
-5. 同一 Wi‑Fi 优先走局域网入口；开启 Pro 后可走外网中转入口
+5. 同一 Wi‑Fi 下直接走局域网入口（外网中转入口已随本分支本地化移除，见 [CHANGELOG](CHANGELOG.md) Unreleased）
 
 ## 本地免费与 Pro 会员
+
+> 状态注记（2026-10-31 对账）：本分支已转为 local-only 开源版，hosted access、付费与激活码路径均已移除（CHANGELOG Unreleased，代码同步清理）。下文 Pro 会员/外网入口/试用计划为历史发布文案，当前不可用，仅保留局域网入口。
 
 - 本地局域网功能永久免费：手机和电脑在同一个 Wi‑Fi / 局域网下即可使用
 - Pro 会员解锁外网入口：通过服务器中转连接自己的电脑，不在同一个 Wi‑Fi 下也可以使用
